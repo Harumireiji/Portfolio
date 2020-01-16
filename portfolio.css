@@ -1,0 +1,124 @@
+﻿body {width: 100%; margin: 0 auto; font-family: 'Helvetica'; font-weight: 25;}
+
+nav {height: 5rem; background-color: white; box-shadow: 0px 0px 25px 0px #BBB; margin: 0 auto; position: relative; z-index: 999; display: flex;}
+nav p {margin: auto; font-size: 17px; color: #413756;}
+section#contact a, nav a {margin: auto 5px; text-decoration: none !important; border-bottom: 2px solid #f8bf36;}
+section#contact a:hover, nav a:hover {color: #55b3ad; border-bottom: 2px solid #6be2db; transition: 0.2s ease;}
+a, a:hover, a:visited, a:active {text-decoration: none !important; color:#000;}
+section#creations a {margin: auto 5px; text-decoration: none !important; border-bottom: 2px solid #f8bf36;}
+section#creations a:hover {color: #55b3ad; border-bottom: 2px solid #6be2db; transition: 0.2s ease;}
+#dev-works a, #design-works a {border-bottom: 0px !important;} 
+#dev-works a:hover, #design-works a:hover {color: #55b3ad; transition: 0.2s ease; border-bottom: 0px !important;}
+
+header {height: 90vh; background-color: #EEE; text-align: center; display:flex; flex-direction: column; justify-content: center; align-items: center;}
+header h1 {font-size: 75px; color: #f95f92; font-family: 'Passion One', 'cursive'; opacity: 0;}
+header p {margin: 0 15px; font-size: 20px; color: #413756; margin-top: -3vh; opacity: 0;}
+.onload {opacity: 1; transition: 1s ease;}
+
+section#presentation {height: auto; background-color: #f95f92; text-align: center; padding: 20px 20px;}
+section#competences {height: auto; background-color: /*#55b3ad*/ #EEE; text-align: center; padding: 20px 0px; color: #444; display: flex; flex-wrap: wrap;}
+section#creations {height:auto; background-color: /*#EBEBEB*/ /*#55b3ad*/ #DDD; text-align: center; padding: 20px 0px;}
+section#contact {height:auto; background-color: #f8bf36; text-align: center; padding: 20px 0px;}
+footer {height: 0.5rem; background-color: #413756; color: #796786; text-align: center; padding: 50px;}
+
+section h1 {width: 100%; font-size: 45px; margin: auto; color: #413756; font-family: 'Passion One', 'cursive';}
+
+section#presentation img {width: 0px; height: 0px; border-radius: 150px; box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1); 
+					display: inline-block; margin: 15px 5px; box-shadow: 0px 0px 5px 0px #f8bf36; transition: 3s ease;}
+section#presentation p {width: 50vw; text-align: left;}
+section#presentation button {width: 60%; background-color: #f8bf36; border: none; border-radius: 30px; font-size: 20px; margin: 20px auto; padding: 15px 5px; transition: 0.4s ease;}
+section#presentation button:hover {background-color: #98d61f; color: #333; transition: 0.4s ease;}
+.carte-competence {width: 170px; display: inline-block; margin: 0px 5px;}
+.carte-competence p {text-align: left; margin-left: 1em;}
+.bulle-competence {width: 150px; height: 150px; background-color: #FFF; border-radius: 150px; box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1); 
+					display: flex; align-items: center; justify-content: center; margin: 30px 5px 3px 5px; padding: 5px; font-weight: bold;}
+.bulle-jauge {width: 160px; height: 1em; background-color: #E3E3E3; border-radius: 15px; box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1); 
+					display: inline-block; margin: 0px 5px;}
+
+#jauge-css {width: 80%; height: inherit; background-color: #98d61f; border-radius: 15px 0px 0px 15px; opacity: 0;}
+
+#jauge-php {width: 50%; height: inherit; background-color: gold; border-radius: 15px 0px 0px 15px; opacity: 0;}
+
+#jauge-pr {width: 75%; height: inherit; background-color: #98d61f; border-radius: 15px 0px 0px 15px; opacity: 0;}
+#jauge-wp {width: 60%; height: inherit; background-color: gold; border-radius: 15px 0px 0px 15px; opacity: 0;}
+
+.creation-line {width: 90vw; margin: 0px auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;}
+#creation-line {opacity: 0; transition: 3s ease; width: 90vw; margin: 0px auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
+.cr-line {width: 100vw; height: 220px; margin: 0px auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; transition: 0.5s ease-out;}
+.bulle-creation {width: 200px; height: 90px; padding-top: 110px; background-color: #FFF; box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1); 
+					margin: 15px 15px; border-radius: 15px; opacity: 0.7; transition: 0.4s ease; display: flex; justify-content: center;
+					font-family: 'Passion One', 'cursive'; font-size: 20px; color: #FFF; text-shadow: 0px 0px 4px #000;}
+.bulle-creation:hover {opacity: 1.0;}
+
+.disparition {opacity: 0; transition: 0.5s ease-out;}
+.display-none {height: 0; transition: 0.5s ease-out;} 
+
+.blog {background-image: url('img/Front4.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.vitrine {background-image: url('img/Front5.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.anim {background-image: url('img/Front6.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.dessin {background-image: url('img/Front2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.pochette {background-image: url('img/PochetteCD.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.affiche {background-image: url('img/Front3.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+
+.bulle-contact {width: 15vw; font-size: 20px; margin: 0px 5px; background-color: #FFF; padding: 15px; border-radius: 15px; display: inline-block;}
+
+section#contact img {height: 25px;}
+
+.load {
+	animation: load 2s;
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: inherit;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  header h1 {font-size: 65px;} 
+  header p {font-size: 18px;}
+  section#presentation p {width: 80vw;}
+  section#presentation img {margin-left: 0vw;}
+  section#presentation button {width:80vw;}
+  section#competences {padding: 20px 10px;}
+  .carte-competence {width: 90%;}
+  .bulle-competence {width: 70vw; height: auto;}
+  .bulle-jauge {width: 72vw;}
+  .bulle-creation {width: 80vw; height: auto; margin: 5px 5px; padding: 20px 0px;}
+  .bulle-contact {font-size:15px;}
+  nav p {margin: auto 10%;}
+}
+
+@media screen and (max-width: 320px) {
+	section#competences {padding: 20px 0px;}
+	.bulle-competence {width: 240px;}
+ 	.bulle-jauge {width: 250px;}
+ 	.bulle-contact {font-size: 12px;}
+}
+
+/*FRONT*/
+
+.front-header {height: 30vh; background-color: #EEE; text-align: center; display:flex; flex-direction: column; align-items: center;}
+
+.front-infos {padding: 0px 20px; background-color: #f95f92; display: flex; flex-direction: row; justify-content: space-evenly;}
+.front-infos p {color: #000;}
+.front-infos b {color: #413756}
+
+.front-creations {padding: 20px 0px; display: flex; flex-direction: column; align-items: center;}
+.front-creations button {background-color: #f8bf36; padding: 20px 70px; font-size: 25px; font-family: 'Passion One', 'cursive';
+						 border: none; border-radius: 20px; transition: 0.2s ease;}
+.front-creations button:hover {background-color: #f95f92; transition: 0.2s ease;}
+.front-creations p {width: 800px; max-width: 80vw;}
+section.front-creations img {width: 800px; max-width: 80vw; margin: 15px 0px; padding: 5px; box-shadow: 0px 0px 1px 5px rgba(0,0,0,0.1);}
+footer a {color: #FFF !important;}
+footer a:hover {color: gold !important;}
+
+
+
+
+
+
